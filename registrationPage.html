@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--linking bootstrap-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title></title>
+
+	<!--linking CSS-->
+	<link rel = "stylesheet" href = "new_style.css">
+
+</head>
+<body class ="bodyRegPage">
+<!--NAVIGATION ung nasa taas na part-->
+
+<div class = "patientNavBar">
+	<nav class = "navbar navbar-expand-md navbar-custom sticky-top">
+		<a href = "/" class = "navbarText">TELEMED</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"></button>
+        <span class="navbar-toggler-icon"></span>
+
+        <div class = "collapse navbar-collapse justify-content-between" id = "navbarCollapse">
+        	<div class = "navbar-nav">
+        		<a href = "/" class = "nav-item nav-link">Patient</a>
+        		<a href = "/" class = "nav-item nav-link">Physician</a>
+        	<a href = "/" class = "nav-item nav-link">System Administrator</a>
+        	</div>
+    	</div>
+	</nav>
+</div>
+
+<br>
+<!--ung boxes na dito nakalagay ang mga fields for signup-->
+<div class = "container registration-form">
+	<br>
+	<text class = "bodyHeader"> REGISTRATION </text>
+	<br>
+
+	<!--name-->
+	<div class = "form-group">
+		<label class = "input_labels" for = "input">Name </label>
+		<input type = "text" class = "form-control" id = "nameRegPage" placeholder = "Enter your name">
+	</div>
+	
+	<!--email-->
+	<div class = "form-group">
+		<label class = "input_labels" for = "input">Email </label>
+		<input type = "email" class = "form-control" id = "emailRegPage" placeholder = "Enter your email">
+	</div>
+
+	<!--Contact number-->
+	<div class = "form-group">
+		<label class = "input_labels" for = "input">Password </label>
+		<input type = "password" class = "form-control" id = "passwordRegPage" placeholder = "Enter your password">
+	</div>
+
+	<!--ReEnter your password-->
+	<div class = "form-group">
+		<label class = "input_labels" for = "input">Re-enter your password </label>
+		<input type = "password" class = "form-control" id = "reenterpasswordRegPage" placeholder = "Re-enter your password">
+	</div>
+
+	<!--Register as Patient, Physician or Sys Ad-->
+
+	<!--
+	<div class = "form-group">
+		<label class = "input_labels" for = "input">Register as</label>
+		<br>
+		<select class = "registerPageChoices" id = "registerAsRegPage">
+			<option selected disabled>Choose One</option>
+			<option value="patientRegPage">Patient</option>
+			<option value="physicianRegPage">Physician</option>
+			<option value="systemAdminRegPage">System Administrator</option>
+		</select>
+	</div>
+	<br>
+
+-->
+	<!--Register button-->
+	<div class = "buttonRegPage">
+		<button type = "submit" class = "registerButton"> Register </button>
+	</div>
+	<br>
+
+</div>
+
+<br>
+<br>
+
+<!--START OF FOOTER-->
+<div class="footer">
+	
+	<img src ="images/icn_fb.png" class = "rounded-circle" width = "50px" height = "50px">
+	<img src ="images/icn_twt.png" class = "rounded-circle" width = "50px" height = "50px">
+	<img src ="images/icn_ig.png" class = "rounded-circle" width = "50px" height = "50px">
+	<br>
+	<p>Made by your HI students</p>
+
+</div>
+
+</body>
+</html>

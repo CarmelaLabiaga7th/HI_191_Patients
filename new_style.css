@@ -1,0 +1,110 @@
+/***FOR REGISTRATION PAGE***/
+
+.patientNavBar{
+	margin: 0px;
+}
+
+.navbarText{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.nav-item{
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.navbar-custom{
+	background-image: linear-gradient(#336b99, #134b79) ;
+}
+
+.registration-form{
+	background-image: linear-gradient(#336b99, #134b79);
+	width: 500px;
+	 border-radius: 5px;
+}
+.form-control, .registerPageChoices{
+	font-size: 14px;
+}
+
+.bodyHeader{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: white;
+}
+
+/****FOR LOGIN PAGE ***/
+.input_labels{
+	font-size: 16px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.login-form-content{
+	padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+    background-image: linear-gradient(#336b99, #134b79);
+
+}
+
+.note{
+	 text-align: center;
+     height: 80px;
+     /*background: -webkit-linear-gradient(left, #0072ff, #8811c5);*/
+      background-image: linear-gradient(#336b99, #134b79);
+     color: #fff;
+     font-family: sans-serif;
+     font-weight: bold;
+     line-height: 80px;
+     border-radius: 5px;
+}
+
+.text-center{
+	color: white;
+}
+
+.bodyRegPage{
+	background-image: url('images/slightly blurredntitled-5.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*both login and reg page footer*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+}
+
+.patientUploadContainer{
+	background-image: linear-gradient(#2b2b2b, #0f0f0f);
+	width: 450px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.innerUpload{
+	width: 300px;
+  	border: 5px dotted white;
+  	padding: 50px;
+  	text-align: center;
+}
+
+.uploadForm{
+	text-align: center;
+}
+
+.uploadButton{
+	border-radius: 5px;
+}
+
+.loginbuttoncontainer{
+	text-align: center;
+}

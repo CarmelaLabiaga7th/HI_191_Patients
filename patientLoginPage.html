@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--linking bootstrap-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--linking CSS-->
+	<link rel = "stylesheet" href = "new_style.css">
+</head>
+<body class = "bodyRegPage">
+	<!--start of div navbar-->
+<div class = "patientNavBar">
+	<nav class = "navbar navbar-expand-md navbar-custom sticky-top">
+		<a href = "/" class = "navbarText">TELEMED</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"></button>
+        <span class="navbar-toggler-icon"></span>
+
+        <div class = "collapse navbar-collapse justify-content-between" id = "navbarCollapse">
+        	<div class = "navbar-nav">
+        		<a href = "/" class = "nav-item nav-link">Patient</a>
+        		<a href = "/" class = "nav-item nav-link">Physician</a>
+        	<a href = "/" class = "nav-item nav-link">System Administrator</a>
+        	</div>
+    	</div>
+	</nav>
+</div>
+<!--END OF DIV NAVBAR-->
+
+<!--START OF DIV CONTAINER-->
+<br>
+    <div class="container login-form">
+      <div class="form">
+        <div class="note">
+          <p>Patient Login Page</p>
+        </div>
+
+        <div class="login-form-content">
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="form-group">
+                	<label class = "input_labels" for = "input">Email </label>
+					<input type = "email" class = "form-control" id = "emailRegPage" placeholder = "Enter your email">
+              </div>
+
+            </div>
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label class = "input_labels" for = "input">Password </label>
+				<input type = "password" class = "form-control" id = "passwordRegPage" placeholder = "Enter your password">
+              </div>
+
+            </div>
+          </div>
+           <br>
+          <div class = "container loginbuttoncontainer">
+          	<button type="submit" class="btnSubmit">Login</button>
+     	 </div>
+     	 <br>
+          <div class="text-center">Do not have account? <a href="patientsignup">Signup here</a></div>
+        </div>
+      </div>
+    </div>
+<!--END OF CONTAINER-->
+<br>
+<br>
+<br>
+<!--START OF FOOTER-->
+<footer class="footer">
+	<br>
+	<img src ="images/icn_fb.png" class = "rounded-circle" width = "50px" height = "50px">
+	<img src ="images/icn_twt.png" class = "rounded-circle" width = "50px" height = "50px">
+	<img src ="images/icn_ig.png" class = "rounded-circle" width = "50px" height = "50px">
+	<br>
+	<br>
+	<p>Made by your HI students</p>
+	<br>
+
+</div>
+<!--END OF FOOTER-->
+
+</body>
+</html>

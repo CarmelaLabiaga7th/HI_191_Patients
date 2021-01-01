@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--linking bootstrap-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--linking CSS-->
+	<link rel = "stylesheet" href = "new_style.css">
+
+  <style media = "screen">
+    .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+}
+
+    body {
+      padding-left: 240px;
+    }
+    main {
+      position: relative;
+      height: 100vh;
+    }
+
+    .menu {
+      background: black;
+      height: 100vh;
+      width: 240px;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      z-index: 5;
+      outline: none;
+    }
+    .menu .avatar {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 2em 0.5em;
+      text-align: center;
+    }
+    .menu .avatar img {
+      width: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #ffea92;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    }
+    .menu .avatar h4 {
+      font-weight: normal;
+      margin-bottom: 0;
+      color: white;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0.5em 0;
+      margin: 0;
+    }
+    .menu ul li {
+      padding: 0.5em 1em 0.5em 3em;
+      font-size: 0.95em;
+      font-weight: regular;
+      background-repeat: no-repeat;
+      background-position: left 15px center;
+      background-size: auto 20px;
+      transition: all 0.15s linear;
+      cursor: pointer;
+    }
+    .menu ul li.icon-dashboard {
+      background-image: url("http://www.entypo.com/images//gauge.svg");
+    }
+    .menu ul li.icon-customers {
+      background-image: url("http://www.entypo.com/images//briefcase.svg");
+    }
+    .menu ul li.icon-users {
+      background-image: url("http://www.entypo.com/images//users.svg");
+    }
+    .menu ul li.icon-calendar {
+      background-image: url("http://www.entypo.com/images//calendar.svg");
+    }
+
+    .menu ul li:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .menu ul li:focus {
+      outline: none;
+    }
+    @media screen and (max-width: 900px) and (min-width: 400px) {
+      body {
+        padding-left: 90px;
+      }
+      .menu {
+        width: 90px;
+      }
+      .menu .avatar {
+        padding: 0.5em;
+        position: relative;
+      }
+      .menu .avatar img {
+        width: 60px;
+      }
+      .menu .avatar h4 {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        margin: 0;
+        min-width: 200px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.4);
+        transform: translate3d(-20px, -50%, 0);
+        transition: all 0.15s ease-in-out;
+      }
+      .menu .avatar:hover h4 {
+        opacity: 1;
+        transform: translate3d(0px, -50%, 0);
+
+      }
+      .menu ul li {
+        height: 60px;
+        background-position: center center;
+        background-size: 30px auto;
+        position: relative;
+      }
+      .menu ul li span {
+        opacity: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.2em 0.5em;
+        border-radius: 4px;
+        top: 50%;
+        left: 80px;
+        transform: translate3d(-15px, -50%, 0);
+        transition: all 0.15s ease-in-out;
+      }
+      .menu ul li span:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid rgba(0, 0, 0, 0.5);
+        transform: translateY(-50%);
+      }
+      .menu ul li:hover span {
+        opacity: 1;
+        transform: translate3d(0px, -50%, 0);
+      }
+    }
+    @media screen and (max-width: 400px) {
+      body {
+        padding-left: 0;
+      }
+      .menu {
+        width: 230px;
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
+        transform: translate3d(-230px, 0, 0);
+        transition: all 0.3s ease-in-out;
+      }
+      .menu .smartphone-menu-trigger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 100%;
+        background: #5bc995;
+      }
+      .menu .smartphone-menu-trigger:before,
+      .menu .smartphone-menu-trigger:after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      .menu .smartphone-menu-trigger:after {
+        top: 55%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      .menu ul li {
+        padding: 1em 1em 1em 3em;
+        font-size: 1.2em;
+      }
+      .menu:focus {
+        transform: translate3d(0, 0, 0);
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+      }
+      .menu:focus .smartphone-menu-trigger {
+        pointer-events: none;
+      }
+    }
+
+  </style>
+</head>
+<body style = "background-color: white">
+<!--start of div navbar-->
+<div class = "patientNavBar">
+	<nav class = "navbar navbar-expand-md navbar-custom sticky-top">
+		<a href = "/" class = "navbarText">TELEMED</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"></button>
+        <span class="navbar-toggler-icon"></span>
+
+        <div class = "collapse navbar-collapse justify-content-between" id = "navbarCollapse">
+        	<div class = "navbar-nav">
+        		<a href = "/" class = "nav-item nav-link">Patient</a>
+        		<a href = "/" class = "nav-item nav-link">Physician</a>
+        	<a href = "/" class = "nav-item nav-link">System Administrator</a>
+        	</div>
+    	</div>
+	</nav>
+</div>
+<!--END OF DIV NAVBAR-->
+
+<!--SIDE BAR-->
+  <nav class="menu" tabindex="0">
+    <div class="smartphone-menu-trigger"></div>
+    <header class="avatar">
+      <img src="images/patientPageAvatar.png" alt="Profile Pic" />
+      <br><br>
+      <h6 style = "color: white">Patient</h6>
+      <h4>Patient_Zero</h4>
+    </header>
+    <ul>
+      <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;" href="/patient-dashboard"><span>Dashboard</span></a> </li>
+      <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;" href="/patient-appointment"><span>Appointments</span></a></li>
+      <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;" href="/patient-discharge"><span>Discharge</span></a></li>
+    </ul>
+  </nav>
+<!--END OF SIDEBAR-->
+<br>
+<br>
+<br>
+<!--START OF PATIENT UPLOAD CONTAINER-->
+<div class = "container patientUploadContainer">
+  <br>
+  <div class = "container innerUpload">
+    <img src = "https://swv.co.nz/wp-content/uploads/2018/04/scroll-down-notext.gif" width = "100px" height = "100px">
+  </div>
+  <br>
+  <br>
+  <p class = "input_labels">Upload your files here</p>
+  <br>
+</div>
+  <br>
+  <form class = "uploadForm" method = "post" enctype = "multipart/form-data">
+    <input class = "uploadButton" type = "file" name = "document" id = "chooseFile">
+    <button class = "uploadButton" type = "submit">Upload file</button>
+  </form>
+<!--END OF PATIENT UPLOAD CONTAINER-->
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*REGISTRATION CSS*/
+
+.navbarText{
+	 font-size: 20px;
+      font-family: sans-serif;
+}
+
+.bodyHeader{
+	text-align: right;
+	color: white;
+	font-family: "Calibri", "sans-serif";
+	font-size: 120%;
+	top: 5px;
+}
+
+
+.navbar-custom{
+	background-image: linear-gradient(#336b99, #134b79) ;
+}
+
+.container{
+	background-image: linear-gradient(#336b99, #134b79);
+	width: 500px;
+}
+.form-control, .registerPageChoices{
+	font-size: 100%;
+}
+
+
+
+.registerButton{
+	 background-image: linear-gradient(#336b99, #134b79) ;
+	text-align: center;
+	font-size: 100%;
+	color:white;
+}
+.input_labels{
+	color: white;
+	font-size: 200%;
+}
+.bodyRegPage{
+	background-image: url('images/slightly blurredntitled-5.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*patientPage CSS*/
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-image: linear-gradient(#336b99, #134b79);
+}
+
+#sidebar ul li, .sidebarLabel{
+	list-style:none;
+	color: white;
+	padding: 15px 10px;
+	border-bottom: 1 px solid rgba(100,100,100,0.3);
+}
+
+#imageID{
+	margin-left: 30px;
+}
+
+.main{
+  margin-left: 200px; /* Same width as the sidebar + left position in px */
+
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 230px;
+	top: 20px;
+}
+
+#sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	bacgkround: black;
+}

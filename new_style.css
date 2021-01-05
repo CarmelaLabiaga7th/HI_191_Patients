@@ -81,6 +81,7 @@
   color: white;
   text-align: center;
   position: fixed;
+  height: 50px;
 }
 
 .patientUploadContainer{
